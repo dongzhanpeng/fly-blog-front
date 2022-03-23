@@ -3,33 +3,95 @@ layout: default
 ---
 
 <div class="main-content archive-page clearfix">
-    <div class="categorys-item">
-        <div class="post-lists">
-            <div class="post-lists-body">
-                {% for post in site.posts %}
-                {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
-                {% capture this_month %}{{ post.date | date: "%B" }}{% endcapture %}
-                {% capture next_year %}{{ post.next.date | date: "%Y" }}{% endcapture %}
-                {% capture next_month %}{{ post.next.date | date: "%B" }}{% endcapture %}
-
-                {% if this_month != next_month or this_year != next_year %}
-                <div class="categorys-title">{{ this_month }} {{ this_year }}</div>
-                {% endif %}
-
-                <div class="post-list-item">
-                    <div class="post-list-item-container">
-                        <div class="item-label">
-                            <div class="item-title"><a href="{{ post.url }}">{{ post.title }}</a></div>
-                            <div class="item-meta clearfix">
-                                <div class="item-meta-date"> {{ post.date | date: "%b %d, %Y" }} </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                {% endfor %}
-            </div>
+    <div class="wrapper">
+        <div class="post-content">
+            <section class="post-tags">
+                <a class="post-tags-item" href="#chinese">chinese</a>
+                <a class="post-tags-item" href="#luxun">luxun</a>
+                <a class="post-tags-item" href="#story">story</a>
+                <a class="post-tags-item" href="#nahan">nahan</a>
+                <a class="post-tags-item" href="#code">code</a>
+                <a class="post-tags-item" href="#markdown">markdown</a>
+                <a class="post-tags-item" href="#github">github</a>
+                <a class="post-tags-item" href="#jekyll">jekyll</a>
+                <a class="post-tags-item" href="#blog">blog</a>
+            </section>
+            <hr>
+            <h2 id="chinese">Chinese</h2>
+            <ul>
+                <li>
+                    <p><a href="http://localhost:4000/books/kuangrenriji.html">
+                狂人日记 (Simplified Chinese)</a><span class="date"><time datetime="01 April 1918"> - 01 April 1918</time></span></p>
+                </li>
+                <li>
+                    <p><a href="http://localhost:4000/books/aqzhengzhuan.html">
+                阿Q正傳 (Traditional Chinese)</a><span class="date"><time datetime="01 December 1921"> - 01 December 1921</time></span></p>
+                </li>
+            </ul>
+            <h2 id="luxun">Luxun</h2>
+            <ul>
+                <li>
+                    <p><a href="http://localhost:4000/books/kuangrenriji.html">
+                狂人日记 (Simplified Chinese)</a><span class="date"><time datetime="01 April 1918"> - 01 April 1918</time></span></p>
+                </li>
+                <li>
+                    <p><a href="http://localhost:4000/books/aqzhengzhuan.html">
+                阿Q正傳 (Traditional Chinese)</a><span class="date"><time datetime="01 December 1921"> - 01 December 1921</time></span></p>
+                </li>
+            </ul>
+            <h2 id="story">Story</h2>
+            <ul>
+                <li>
+                    <p><a href="http://localhost:4000/books/kuangrenriji.html">
+                狂人日记 (Simplified Chinese)</a><span class="date"><time datetime="01 April 1918"> - 01 April 1918</time></span></p>
+                </li>
+            </ul>
+            <h2 id="nahan">Nahan</h2>
+            <ul>
+                <li>
+                    <p><a href="http://localhost:4000/books/aqzhengzhuan.html">
+                阿Q正傳 (Traditional Chinese)</a><span class="date"><time datetime="01 December 1921"> - 01 December 1921</time></span></p>
+                </li>
+            </ul>
+            <h2 id="code">Code</h2>
+            <ul>
+                <li>
+                    <p><a href="http://localhost:4000/coding/markdown.html">
+                Markdown Gramma</a><span class="date"><time datetime="29 March 2016"> - 29 March 2016</time></span></p>
+                </li>
+            </ul>
+            <h2 id="markdown">Markdown</h2>
+            <ul>
+                <li>
+                    <p><a href="http://localhost:4000/coding/markdown.html">
+                Markdown Gramma</a><span class="date"><time datetime="29 March 2016"> - 29 March 2016</time></span></p>
+                </li>
+            </ul>
+            <h2 id="github">Github</h2>
+            <ul>
+                <li>
+                    <p><a href="http://localhost:4000/coding/markdown.html">
+                Markdown Gramma</a><span class="date"><time datetime="29 March 2016"> - 29 March 2016</time></span></p>
+                </li>
+                <li>
+                    <p><a href="http://localhost:4000/jekyll/welcome.html">
+                Welcome to Nice Blog</a><span class="date"><time datetime="30 March 2016"> - 30 March 2016</time></span></p>
+                </li>
+            </ul>
+            <h2 id="jekyll">Jekyll</h2>
+            <ul>
+                <li>
+                    <p><a href="http://localhost:4000/jekyll/welcome.html">
+                Welcome to Nice Blog</a><span class="date"><time datetime="30 March 2016"> - 30 March 2016</time></span></p>
+                </li>
+            </ul>
+            <h2 id="blog">Blog</h2>
+            <ul>
+                <li>
+                    <p><a href="http://localhost:4000/jekyll/welcome.html">
+                Welcome to Nice Blog</a><span class="date"><time datetime="30 March 2016"> - 30 March 2016</time></span></p>
+                </li>
+            </ul>
         </div>
-
     </div>
 </div>
