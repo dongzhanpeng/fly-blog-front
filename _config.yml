@@ -1,0 +1,24 @@
+name: Fly Blog
+author: Fly
+url: http://www.dongzhanpeng.com
+baseurl: "/fly-blog-front"
+github: https://github.com/dongzhanpeng/
+resume_site: http://www.dongzhanpeng.com/Resume.io/
+description: 学海无涯，吾辈自强，无远弗届，贵在坚持
+github_username: dongzhanpeng
+plugins: [jekyll-paginate]
+permalink: /:year-:month-:day-:title
+paginate: 12
+paginate_path: "/page/:num/"
+exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile']
+highlighter: rouge
+markdown: kramdown
+comments :
+  gitalk :
+    clientID : 
+    clientSecret : 
+    repo : 
+    owner : 
+    admin : 
+cxyurl: http://www.cxy521.com/
+cdnurl: https://www.24kdh.com/

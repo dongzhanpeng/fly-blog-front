@@ -1,0 +1,22 @@
+<header id="header" class="header bg-white">
+    <div class="navbar-container">
+        <a href="{{ '/' | prepend: site.baseurl }}" class="navbar-logo">
+            <img src="{{ '/style/image/logo.png' | prepend: site.baseurl }}" alt="{{ site.name }}" />
+            <span style="font-family: monospace;font-weight: 700;">{{ site.name }}</span>
+        </a>
+        <div class="navbar-menu" style="font-family: monospace;font-weight: 700;">
+            <a href="{{ '/archives' | prepend: site.baseurl }}">Archives</a>
+            <a href="{{ '/tags' | prepend: site.baseurl }}">Tag</a>
+            <a href="{{ '/about' | prepend: site.baseurl }}">About</a>
+            <a href="{{ '/' | prepend: site.cxyurl }}">程序员导航</a>
+            <a href="{{ '/' | prepend: site.cdnurl }}">24K导航</a>
+        </div>
+        <div class="navbar-mobile-menu" onclick="">
+            <span class="icon-menu cross"><span class="middle"></span></span>
+            <ul>
+                <li><a href="{{ '/archives' | prepend: site.baseurl }}">Archives</a></li>
+                <li><a href="{{ '/about' | prepend: site.baseurl }}">About</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
